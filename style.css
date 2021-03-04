@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body > * {
+    width: 80%;
+    margin: 10px auto;
+}
+
+header {
+    height: 150px;
+}
+
+header .logo-img {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+
+    vertical-align: middle;
+
+    background-color: brown;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+}
+
+header nav li {
+    display: inline-block;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+#main-top {
+    background-color: darkorange;
+}
+
+#main-top .jumbotron {
+    padding: 400px 50% 50px 50px;
+}
+
+#main-bot > div {
+    padding: 10px 0;
+}
+
+#main-bot aside,
+#main-bot article {
+    height: 100%;
+}
+
+#main-bot aside {
+    width: 25%;
+}
+
+
+#main-bot article {
+    width: calc(50% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.row > * {
+    float: left;
+}
+
+.row::after {
+    content: '';
+    display: table;
+
+    clear: both;
+}
+
+.main-img {
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+
+    overflow: hidden;
+
+    background-color: darkslategrey;
+}
+
+footer {
+    height: 80px;
+    text-align: center;
+}
+
+footer span {
+    color: red;
+}
